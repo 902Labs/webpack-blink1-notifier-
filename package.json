@@ -1,0 +1,34 @@
+{
+  "name": "webpack-blink1-notifier",
+  "version": "0.0.1",
+  "description": "Webpack Plugin for relaying build status via blink(1) devices",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:902Labs/blink1-status-hub.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev": "./node_modules/supervisor/lib/cli-wrapper.js -w . -i node_modules -e js main.js"
+  },
+  "author": "Russell Brown",
+  "license": "ISC",
+  "keywords": [
+    "blink(1)",
+    "blink1",
+    "productivity",
+    "status light",
+    "Webpack",
+    "Webpack Plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/902Labs/blink1-status-hub/issues"
+  },
+  "dependencies": {
+    "node-blink1": "^0.2.1",
+    "parse-color": "^1.0.0"
+  },
+  "devDependencies": {
+  }
+}
